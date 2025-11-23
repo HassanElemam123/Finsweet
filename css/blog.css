@@ -1,0 +1,14 @@
+*{
+  box-sizing: border-box;
+}
+header {
+  background-color: #232536;
+  height: 10svh;
+}
+.featured {
+  background-color: #F4F0F8;
+  height: 60svh;
+}
+section{
+  padding-block: 40px;
+}
