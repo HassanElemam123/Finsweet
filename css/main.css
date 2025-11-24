@@ -48,6 +48,54 @@ header .links a:hover {
 header .sub {
   height: 40px;
 }
+header .icon {
+  color: #ffff;
+  padding: 5px;
+  border-radius: 5px;
+  transition: var(--main-transition);
+  display: none;
+}
+header .icon a {
+  color: #ffff;
+}
+header .icon a:hover {
+  background-color: #4c4c4c37;
+}
+header .icon:hover{
+  background-color: #2d3146;
+  cursor: pointer;
+}
+header .icon .list {
+  background-color: #2d3146;
+  right: 0;
+  top: 34px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  display: none;
+  border-radius: 2px;
+}
+header .icon:hover .list {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 580px) {
+  header .links a, .action .sub  {
+    display: none;
+  }
+  header .icon {
+    display: block;
+  }
+  header .container nav {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+}
+
 /* end header   */
 
 /* start footer   */
@@ -374,8 +422,8 @@ header .sub {
   }
 }
 @media (max-width: 580px) {
-  .featured .container {
-    text-align: center;
+  .featured .read {
+    width: 100%;
   }
 }
 /* end featured  */
